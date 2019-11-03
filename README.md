@@ -3,8 +3,9 @@ Good day Mate! This is my personal blog I created from exploring the feature-pac
 
 Features:
 <ul>
-  <li>Lightning Fast - one very popular feature of Firebase is its ability to <code>Cache-Control</code> programatically and Google being one of the top IT Companies in the world, you can take advantage of its regional-based and global content-delivery network (CDN) which I promise you will deliver your contents to your audience with a blink of an eye wherever they are in the world. <a href="https://firebase.google.com/docs/hosting/quickstart">Learn More</a></li>
-  <li>Organized and Structured - by using the NodeJs, ExpressJs, Handlebars and Bootstrap fullstack, this simple blog platform definitely prides itself in terms of organization and structure.</li>
+  <li><u><strong>Lightning Fast</strong></u> - one very popular feature of Firebase is its ability to <code>Cache-Control</code> programatically and Google being one of the top IT Companies in the world, you can take advantage of its regional-based and global content-delivery network (CDN) which I promise you will deliver your contents to your audience with a blink of an eye wherever they are in the world. <a href="https://firebase.google.com/docs/hosting/quickstart">Learn More</a></li>
+  <li><u><strong>Organized and Structured</strong></u> - by using the NodeJs, ExpressJs, Handlebars and Bootstrap fullstack, this simple blog platform definitely prides itself in terms of organization and structure.</li>
+  <li><u><strong>SEO-Ready</strong></u> - Via the magic of Handlebars integrated with this blog platform, your search engine optimization (SEO) cravings will surely be satisfied with ease and automation. No need to explicitly or manually set your meta tags, Handlebars <code>handled</code> it for you so you can focus more on creating rich and engaging blog entries and contents.</li>
 </ul>
 
 On the onset, we assume that you already have the necessary grasp of knowledge about operating Firebase via your terminal. If not, we highly recommend following this simple <a href="https://firebase.google.com/docs/cli">tutorials</a> on how to use the tools for managing, viewing, and deploying your Firebase projects before proceeding.
