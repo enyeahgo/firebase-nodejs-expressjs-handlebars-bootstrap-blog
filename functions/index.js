@@ -1,6 +1,6 @@
 const functions = require('firebase-functions');
 const firebase = require('firebase-admin');
-const serviceAccount = require("./c3w-service-account.json");
+const serviceAccount = require("./service-account-filename.json");
 const path = require('path');
 const express = require('express');
 const hbs = require('handlebars');
@@ -11,7 +11,7 @@ const request = require('request');
 
 const firebaseapp = firebase.initializeApp({
 	credential: firebase.credential.cert(serviceAccount),
-	databaseURL: "https://create-cheap-commerce.firebaseio.com"
+	databaseURL: "https://firebase-project-name.firebaseio.com"
 });
 
 const app = express();
@@ -296,7 +296,7 @@ hbs.registerHelper('toupper', function(str) {
 
 ///// END OF HANDLEBAR HELPERS
 
-// GET BG FOR appPAGE
+// MY PRESET BACKGROUND IMAGE URLS FROM UNSPLASH
 let getBgUrl = () => {
 	let bgs = [
 		'https://images.unsplash.com/photo-1526415634669-2f8899c7b517?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjkyODE0fQ?fit=crop&w=800&h=600&crop=edges',
