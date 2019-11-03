@@ -8,6 +8,8 @@ On your Firebase Realtime-database we need to create entries for the following:
   <li>Blogs</li>
   <li>Blogs/all</li>
   <li>Blogs/featured</li>
+  <li>Blogs/top1</li>
+  <li>Blogs/top2</li>
   <li>Resources</li>
   <li>Counters</li>
   <li>Sitemaps</li>
