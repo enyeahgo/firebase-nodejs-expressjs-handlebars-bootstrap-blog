@@ -16,7 +16,7 @@ On your Firebase Realtime-database we need to create entries for the following:
   <li>Tweets</li>
 </ul>
 
-A single blog entry must in the database must include (at a minimum) these data:
+A single blog entry we put inside our <code>Blog/all</code>, <code>Blog/featured</code>, <code>Blog/top1</code> or  <code>Blog/top2</code> in our database must include (at a minimum) these data:
 <ul>
   <li>author</li>
   <li>avatar</li>
