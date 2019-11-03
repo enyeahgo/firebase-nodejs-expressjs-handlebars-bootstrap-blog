@@ -35,4 +35,24 @@ A single blog entry we put inside our <code>Blog/all</code>, <code>Blog/featured
   <li>typeIcon</li>
 </ul>
 
-We need to include these keys on every blog entry (json) because the handlebars templates relies highly on the data provided by these keys.
+We need to include these keys on every blog entry (json) because the handlebars templates relies highly on the data provided by these keys. Here is an example blog entry in json.
+
+```
+{
+  "author" : "THEAUTHOR",
+  "avatar" : "/img/techguy.png",
+  "bid" : 1,
+  "category" : "Websites for Businesses",
+  "catid" : "wfb",
+  "content" : "<Enter your blog content here. Note that you can include html tags here just make sure to delete empty, trailing and leading spaces so that the content data is a whole compact string.>",
+  "imageURL" : "https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjkyODE0fQ?fit=crop&w=800&h=600&crop=edges",
+  "link" : "/blog/before-you-decide-choosing-your-webhosting-service-provider-in-the-philippines",
+  "preface" : "On the hosting side, one thing I should note is that you should select the hosting company that is reliable and loyal to their customers, so that if your domain name is close to end they would try to contact you by all means and NOT let that your domain end and go to private vendue, and you end up paying more than just the reclamation price cost.",
+  "pubdate" : "Oct 30, 2019 02:40 PM",
+  "taglines" : "domain free, design online, dubai, design online free, domain name free, database, desktop shortcut firefox, easy, earn money, easily, email, ecommerce, easy and free, example, export html, ecommerce free, earn money advertising, email, create e commerce website, create e learning website, create e learning website wordpress, create e-commerce website online, create e commerce website in asp.net, create e business website, create free ecommerce website, create e-commerce website php, free, for free online, for business, for free with free domain name, for my facebook page, free google site, free india, google free, godaddy, google sites, google sites free, github, game, google domain, graphics, g suite",
+  "title" : "Before You Decide Choosing Your Webhosting Service Provider in the Philippines",
+  "tweetURL" : "https://mobile.twitter.com/mychilisauce/status/1190837439981486081",
+  "type" : "New Post",
+  "typeIcon" : "ui-2_like"
+}
+```
