@@ -15,3 +15,24 @@ On your Firebase Realtime-database we need to create entries for the following:
   <li>Sitemaps</li>
   <li>Tweets</li>
 </ul>
+
+A single blog entry must in the database must include (at a minimum) these data:
+<ul>
+  <li>author</li>
+  <li>avatar</li>
+  <li>bid</li>
+  <li>category</li>
+  <li>catid</li>
+  <li>content</li>
+  <li>imageURL</li>
+  <li>link</li>
+  <li>preface</li>
+  <li>pubdate</li>
+  <li>taglines</li>
+  <li>title</li>
+  <li>tweetURL</li>
+  <li>type</li>
+  <li>typeIcon</li>
+</ul>
+
+We need to include these keys on every blog entry (json) because the handlebars templates relies highly on the data provided by these keys.
