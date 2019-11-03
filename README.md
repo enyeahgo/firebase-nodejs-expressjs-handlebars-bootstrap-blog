@@ -1,7 +1,9 @@
 # firebase-nodejs-expressjs-handlebars-bootstrap-blog
 Good day Mate! This is my personal blog I created from exploring the feature-packed Firebase platform and integrating NodeJs, ExpressJs, Handlebars and Bootstrap with it.
 
-You will need to create your new Firebase project, get its service account json and place it inside <code>/functions</code> folder. Make sure to change the filename of the service account accordingly on your <code>/functions/index.js</code>.
+On the onset, we assume that you already have the necessary grasp of knowledge about operating Firebase via your terminal. If not, we highly recommend following this simple <a href="https://firebase.google.com/docs/cli">tutorials</a> on how to use the tools for managing, viewing, and deploying your Firebase projects before proceeding.
+
+Now, let's get on with it. You will need to create your new Firebase project, get its service account json and place it inside <code>/functions</code> folder. Make sure to change the filename of the service account accordingly on your <code>/functions/index.js</code>.
 
 On your Firebase Realtime-database we need to create entries for the following:
 <ul>
