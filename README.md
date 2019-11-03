@@ -46,7 +46,7 @@ A single blog entry we put inside our <code>Blog/all</code>, <code>Blog/featured
   <li>typeIcon</li>
 </ul>
 
-We need to include these keys on every blog entry (json) because the <code>Handlebars</code> template relies highly on the data provided by these keys. Here is an example blog entry in json.
+We need to include these keys on every blog entry (json) because the <code>Handlebars</code> template relies highly on the data provided by these keys. Here is an example blog entry as a json object which you can <code>Import</code> into <code>Blogs/all</code> for example.
 
 ```
 {
