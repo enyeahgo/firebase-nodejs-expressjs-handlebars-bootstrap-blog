@@ -1,0 +1,27 @@
+#!/data/data/com.termux/files/usr/bin/bash
+cp LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png launch-screen-1125x2436.png
+cp LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png  launch-screen-2208x1242.png
+cp LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png  launch-screen-1242x2208.png
+cp LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png  launch-screen-1242x2688.png
+cp LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png  launch-screen-1792x828.png
+cp LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png  launch-screen-2436x1125.png
+cp LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png  launch-screen-2688x1242.png
+cp LaunchImage-568h@2x~iphone_640x1136.png  launch-screen-640x1136.png
+cp LaunchImage-750@2x~iphone6-landscape_1334x750.png  launch-screen-1334x750.png
+cp LaunchImage-750@2x~iphone6-portrait_750x1334.png  launch-screen-750x1334.png
+cp LaunchImage-828@2x~iphoneXr-portrait_828x1792.png  launch-screen-828x1792.png
+cp LaunchImage-Landscape@2x~ipad_2048x1496.png  launch-screen-2048x1496.png
+cp LaunchImage-Landscape@2x~ipad_2048x1536.png  launch-screen-2048x1536.png
+cp LaunchImage-Landscape@2x~ipad_2224x1668.png  launch-screen-2224x1668.png
+cp LaunchImage-Landscape@2x~ipad_2732x2048.png  launch-screen-2732x2048.png
+cp LaunchImage-Landscape~ipad_1024x748.png  launch-screen-1024x748.png
+cp LaunchImage-Landscape~ipad_1024x748.png  launch-screen-1024x748.png
+cp LaunchImage-Portrait@2x~ipad_1536x2008.png  launch-screen-1536x2008.png
+cp LaunchImage-Portrait@2x~ipad_1536x2048.png  launch-screen-1536x2048.png
+cp LaunchImage-Portrait@2x~ipad_1668x2224.png  launch-screen-1668x2224.png
+cp LaunchImage-Portrait@2x~ipad_2048x2732.png  launch-screen-2048x2732.png
+cp LaunchImage-Portrait~ipad_768x1024.png  launch-screen-768x1024.png
+cp LaunchImage.png  launch-screen.png
+cp LaunchImage~ipad.png  launch-screen-ipad.png
+cp LaunchImage~iphone-320x480.png  launch-screen-320x480.png
+cp LaunchImage~iphone_640x960.png launch-screen-640x960.png

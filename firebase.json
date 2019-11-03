@@ -1,0 +1,36 @@
+{
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      {
+      	"source": "/",
+      	"function": "app"
+      },
+      {
+      	"source": "/blogcategory/**",
+      	"function": "blogcategory"
+      },
+      {
+      	"source": "/blog/**",
+      	"function": "blog"
+      },
+      {
+      	"source": "/resources/**",
+      	"function": "app"
+      },
+      {
+      	"source": "/subscribed/**",
+      	"function": "app"
+      },
+      {
+      	"source": "/sitemap",
+      	"function": "app"
+      },
+      {
+      	"source": "/dl/**",
+      	"dynamicLinks": true
+      }
+    ]
+  },
+  "appAssociation": "AUTO"
+}
