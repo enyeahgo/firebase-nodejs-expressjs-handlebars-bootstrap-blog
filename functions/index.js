@@ -1,3 +1,8 @@
+// Firebase-NodeJs-ExpressJs-Handlebars-Bootstrap Blog Platform
+// Author: Inigo Orosco II
+// Github: https://github.com/enyeahgo
+// Twitter: https://mobile.twitter.com/mychilisauce
+
 const functions = require('firebase-functions');
 const firebase = require('firebase-admin');
 const serviceAccount = require("./service-account-filename.json");
