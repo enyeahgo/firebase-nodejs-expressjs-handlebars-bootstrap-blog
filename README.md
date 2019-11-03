@@ -3,7 +3,7 @@ Good day Mate! This is my personal blog I created from exploring the feature-pac
 
 Features:
 <ul>
-  <li>Lightning Fast - one very popular feature of Firebase is its ability to `Cache-Control` programatically and Google being one of the top IT Companies in the world, you can take advantage of its regional-based and global content-delivery network (CDN) which I promise you will deliver your contents to your audience with a blink of an eye wherever they are in the world. <a href="https://firebase.google.com/docs/hosting/quickstart">Learn More</a></li>
+  <li>Lightning Fast - one very popular feature of Firebase is its ability to <code>Cache-Control</code> programatically and Google being one of the top IT Companies in the world, you can take advantage of its regional-based and global content-delivery network (CDN) which I promise you will deliver your contents to your audience with a blink of an eye wherever they are in the world. <a href="https://firebase.google.com/docs/hosting/quickstart">Learn More</a></li>
   <li>Organized and Structured - by using the NodeJs, ExpressJs, Handlebars and Bootstrap fullstack, this simple blog platform definitely prides itself in terms of organization and structure.</li>
 </ul>
 
