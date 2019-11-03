@@ -8,6 +8,8 @@ Features:
   <li><u><strong>SEO-Ready</strong></u> - Via the magic of Handlebars integrated with this blog platform, your search engine optimization (SEO) cravings will surely be satisfied with ease and automation. No need to explicitly or manually set your meta tags, Handlebars <code>handled</code> it for you so you can focus more on creating rich and engaging blog entries and contents.</li>
 </ul>
 
+<hr>
+
 On the onset, we assume that you already have the necessary grasp of knowledge about operating Firebase via your terminal. If not, we highly recommend following this simple <a href="https://firebase.google.com/docs/cli">tutorials</a> on how to use the tools for managing, viewing, and deploying your Firebase projects before proceeding.
 
 Now, let's get on with it. You will need to create your new Firebase project, get its service account json and place it inside <code>/functions</code> folder. Make sure to change the filename of the service account accordingly on your <code>/functions/index.js</code>.
