@@ -9,4 +9,7 @@ On your Firebase Realtime-database we need to create entries for the following:
   <li>Blogs/all</li>
   <li>Blogs/featured</li>
   <li>Resources</li>
+  <li>Counters</li>
+  <li>Sitemaps</li>
+  <li>Tweets</li>
 </ul>
